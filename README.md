@@ -85,6 +85,8 @@ En la carpeta de piezas impresas están los modelos STL de la carcasa de _Erjuli
 
 ![Carcasa Tseo](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Carcasa%20Erjuli.JPG "Carcasa Tseo")
 
+También se incluyen los ficheros FreeCad donde está el diseño de estas piezas.
+
 ![Erjuli con montera](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Carcasa%20con%20Montera.JPG "Erjuli con montera")
 
 ![Muleta Erjuli](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Muleta%20Erjuli.JPG "Muleta Erjuli")
