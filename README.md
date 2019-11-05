@@ -1,4 +1,5 @@
 # Erjuli
+
 ## de NacioSystems:
 
 Versión 3.0
@@ -11,7 +12,8 @@ Es la tercera versión de este robot, la primera participó en la Oshwdem 2016, 
 
 - - -
 
-###Introducción:
+### Introducción:
+
 El chasis del vehículo está construido sobre la plataforma **Pololu Zumo Arduino**, sobre el que se instalaron sensores de distancia a través de ultrasonidos HC-SR04, uno en la dirección frontal y otro a cada lado del bastidor. Se complementa con el sensor QTR frontal de Pololu Zumo, que tendrá la función de detectar la línea del borde de la pista, con el objeto de no salirse.
 
 El vehículo se enciende con el interruptor de la _shield_ de Pololu_, y queda parado a la espera de que se pulse el botón incorporado en el chasis, para iniciar el combate. Una vez pulsado el botón **Erjuli** cuenta los 5 segundos de rigor que marcan las reglas. Una vez en marcha lee a través de los sensores en que situación está el contrincante, delante, a la derecha o a la izquierda. Lógicamente si no está en ninguna de esas posiciones es que estará detrás. **Erjuli girará en la dirección en la que encuentre al contrincante y acelerará para embestirlo con sus 500gr de peso. Si en el movimiento detecta que pisa el borde de la pista, con los sensores delanteros QTR, retocederá para salir de la zona  de peligro.
@@ -26,7 +28,8 @@ Los sensores HC-SR04 se activan simultáneamente a la vez, leyendo cada uno de e
 Al mismo tiempo **Erjuli** moverá su servomotor trasero, para poner la muleta del lado en que encuentra el adversario, para que este se confunda con el señuelo
 
 
-###Materiales:
+### Materiales:
+
 El vehículo utiliza los siguientes materiales:
 * Pololu Zumo for Arduino con balda
 * Arduino UNO R3
@@ -47,23 +50,26 @@ Para ocultar toda la electrónica y cableado, así como para darle una mayor rig
 
 
 
-###Dohyo:
+### Dohyo:
+
 El **_Dohyo_** es pista donde se desenvuelve el combate de minisumo. Es una circunferencia de 77cm de diámetro de color negro. El borde exterior del _Dohyo_ es una línea blanca de 2,5cm de amcho y que sirve para indicarles a los robóts los límites que no se deben traspasar.
 
 ![Foto Dohyo](https://github.com/NacioSystems/Tseo/blob/master/Imagenes/TSO2%20con%20encoders.jpg "Dohyo")
 
 
-###Condiciones iniciales:
+### Condiciones iniciales:
+
 La competición se desenvuelve en hasta tres asaltos. En el primer asalto, los robóts estarán enfrentados sobre unas marcas equiespaciadas del centro del _Dohyo_. En el segundo asalto los contrincantes estarán en la misma posición de inicio pero de tal manera que el lado derecho de uno será paralelo al lado izquierdo del otro, mirando en dircciónes opuestas. En el tercer asalto, si no quedó claro cual es el vencedor en los dos primeros asaltos, los robóts se pondrán de espaldas, mirando hacia el exterior del _Dohyo_.
 
 Cada asalto comienza cuando lo indica el árbitro, dejando un espacio temporal de 5 segundos antes de empezar a moverse.
 
 
-###Detección del contrincante y estrategia:
+### Detección del contrincante y estrategia:
 
 
 
-###Programa:
+### Programa:
+
 El programa está realizado con el IDE Arduino, para su programación directa a través de cable USB. En la carpeta software se puede ver el programa comentado. El programa cuenta con una pestaña de "configuración.h", para ajustar los valores por defecto, que dependerán de los motores y sensores utilizados en cada caso, si son diferentes a los de esta construcción.
 
 Una vez encendido el robót configura los sensores, y dependiendo de las pulsaciones del botón de inicio sabrá en que estado estará, asalto primero, segundo o tercero. De esa manera puede empezar a moverse de diferente manera, es decir, en el primer asalto tendrá que avanzar para alcanzar la máxima velocidad lo antes posible para la colisión frontal con el adversario. Lógicamente ganará el que tenga mayor inercia (masa x velocidad) o el que consiga levantar al contrincante. Si lo levanta aumentará su peso y reducirá la adherencia del contrario.
@@ -71,10 +77,10 @@ Una vez encendido el robót configura los sensores, y dependiendo de las pulsaci
 La muleta del _Erjuli_ servirá para despistar al contrincante.
 
 
-###Construcción:
+### Construcción:
 
 
-###Piezas impresas:
+### Piezas impresas:
 
 En la carpeta de piezas impresas están los modelos STL de la carcasa de _Erjuli_ donde se albergarán los senosre HC-SR04, y el microservo. Tambien están la montera, opicional, se puede llevar sólo para el paseillo inicial, y el soporte que acopla el microservo al mástil de la muleta. 
 
@@ -84,7 +90,7 @@ En la carpeta de piezas impresas están los modelos STL de la carcasa de _Erjuli
 
 
 
-###Referencias:
+### Referencias:
 
 
 * *[Página Web reglamento Minisumo **OSHWDEM**][1]*
