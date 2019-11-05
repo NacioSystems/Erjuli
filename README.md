@@ -54,7 +54,7 @@ Para ocultar toda la electrónica y cableado, así como para darle una mayor rig
 
 El **_Dohyo_** es pista donde se desenvuelve el combate de minisumo. Es una circunferencia de 77cm de diámetro de color negro. El borde exterior del _Dohyo_ es una línea blanca de 2,5cm de amcho y que sirve para indicarles a los robóts los límites que no se deben traspasar.
 
-![Foto Dohyo](https://github.com/NacioSystems/Tseo/blob/master/Imagenes/TSO2%20con%20encoders.jpg "Dohyo")
+![Foto Dohyo](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Dojo.png "Medidas Dohyo")
 
 
 ### Condiciones iniciales:
@@ -88,7 +88,7 @@ En la carpeta de piezas impresas están los modelos STL de la carcasa de _Erjuli
 
 ![Erjuli con montera](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Carcasa%20con%20Montera.JPG "Erjuli con montera")
 
-
+![Muleta Erjuli](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Muleta%20Erjuli.JPG "Muleta Erjuli")
 
 ### Referencias:
 
