@@ -14,7 +14,7 @@ Es la tercera versión de este robot, la primera participó en la Oshwdem 2016, 
 ###Introducción:
 El chasis del vehículo está construido sobre la plataforma **Pololu Zumo Arduino**, sobre el que se instalaron sensores de distancia a través de ultrasonidos HC-SR04, uno en la dirección frontal y otro a cada lado del bastidor. Se complementa con el sensor QTR frontal de Pololu Zumo, que tendrá la función de detectar la línea del borde de la pista, con el objeto de no salirse.
 
-El vehículo se enciende con el interruptor de la _shield_ de Pololu, y queda parado a la espera de que se pulse el botón incorporado en el chasis, para iniciar el combate. Una vez pulsado el botón **Erjuli** cuenta los 5 segundos de rigor que marcan las reglas. Una vez en marcha lee a través de los sensores en que situación está el contrincante, delante, a la derecha o a la izquierda. Lógicamente si no está en ninguna de esas posiciones es que estará detrás. **Erjuli girará en la dirección en la que encuentre al contrincante y acelerará para embestirlo con sus 500gr de peso. Si en el movimiento detecta que pisa el borde de la pista, con los sensores delanteros QTR, retocederá para salir de la zona  de peligro.
+El vehículo se enciende con el interruptor de la _shield_ de Pololu_, y queda parado a la espera de que se pulse el botón incorporado en el chasis, para iniciar el combate. Una vez pulsado el botón **Erjuli** cuenta los 5 segundos de rigor que marcan las reglas. Una vez en marcha lee a través de los sensores en que situación está el contrincante, delante, a la derecha o a la izquierda. Lógicamente si no está en ninguna de esas posiciones es que estará detrás. **Erjuli girará en la dirección en la que encuentre al contrincante y acelerará para embestirlo con sus 500gr de peso. Si en el movimiento detecta que pisa el borde de la pista, con los sensores delanteros QTR, retocederá para salir de la zona  de peligro.
 
 
 ![Erjuli](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Erjuli%20final%201.jpg "Erjuli listo")
@@ -37,7 +37,7 @@ El vehículo utiliza los siguientes materiales:
 * CI perforado universal para la conexión de los sensores de ultrasonidos
 * Tiras de pines hembra y cableado para la conexión de todos los sitemas a la _shield_
 
-![Foto Erjuli desarmado](https://github.com/NacioSystems/Tseo/blob/master/Imagenes/TSO2%20con%20encoders.jpg "Erjuli desarmado")
+![Foto Erjuli desarmado](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Desarmado.JPG "Erjuli desarmado")
 
 Otros materiales:
 
@@ -47,14 +47,14 @@ Para ocultar toda la electrónica y cableado, así como para darle una mayor rig
 
 
 
-###Doyo:
-El **_Doyo_** es pista donde se desenvuelve el combate de minisumo. Es una circunferencia de 80cm de diámetro de color negro. El borde exterior del _Doyo_ es una línea blanca de 1,9cm de amcho y que sirve para indicarles a los robóts los límites que no se deben traspasar.
+###Dohyo:
+El **_Dohyo_** es pista donde se desenvuelve el combate de minisumo. Es una circunferencia de 77cm de diámetro de color negro. El borde exterior del _Dohyo_ es una línea blanca de 2,5cm de amcho y que sirve para indicarles a los robóts los límites que no se deben traspasar.
 
-![Foto Doyo](https://github.com/NacioSystems/Tseo/blob/master/Imagenes/TSO2%20con%20encoders.jpg "Doyo")
+![Foto Dohyo](https://github.com/NacioSystems/Tseo/blob/master/Imagenes/TSO2%20con%20encoders.jpg "Dohyo")
 
 
 ###Condiciones iniciales:
-La competición se desenvuelve en hasta tres asaltos. En el primer asalto, los robóts estarán enfrentados sobre unas marcas equiespaciadas del centro del _Doyo_. En el segundo asalto los contrincantes estarán en la misma posición de inicio pero de tal manera que el lado derecho de uno será paralelo al lado izquierdo del otro, mirando en dircciónes opuestas. En el tercer asalto, si no quedó claro cual es el vencedor en los dos primeros asaltos, los robóts se pondrán de espaldas, mirando hacia el exterior del _Doyo_.
+La competición se desenvuelve en hasta tres asaltos. En el primer asalto, los robóts estarán enfrentados sobre unas marcas equiespaciadas del centro del _Dohyo_. En el segundo asalto los contrincantes estarán en la misma posición de inicio pero de tal manera que el lado derecho de uno será paralelo al lado izquierdo del otro, mirando en dircciónes opuestas. En el tercer asalto, si no quedó claro cual es el vencedor en los dos primeros asaltos, los robóts se pondrán de espaldas, mirando hacia el exterior del _Dohyo_.
 
 Cada asalto comienza cuando lo indica el árbitro, dejando un espacio temporal de 5 segundos antes de empezar a moverse.
 
