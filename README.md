@@ -46,7 +46,7 @@ Otros materiales:
 
 Para ocultar toda la electrónica y cableado, así como para darle una mayor rigidez al conjunto, se ha creado una caja impresa en 3D, que incluye los orificios para los sensores de ultrasonidos y el microservo SG90.
 
-![Foto Erjuli 3D(https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Erjuli%201.JPG "Erjuli 3D")
+![Foto Erjuli 3D](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Erjuli%201.JPG "Erjuli 3D")
 
 
 ### Dohyo:
