@@ -16,7 +16,7 @@ Es la tercera versión de este robot, la primera participó en la Oshwdem 2016, 
 
 El chasis del vehículo está construido sobre la plataforma **Pololu Zumo Arduino**, sobre el que se instalaron sensores de distancia a través de ultrasonidos **HC-SR04**, uno en la dirección frontal y otro a cada lado del bastidor. Se complementa con el sensor **QTR** frontal de Pololu Zumo, que tendrá la función de detectar la línea del borde de la pista, con el objeto de no salirse.
 
-El vehículo se enciende con el interruptor de la _shield_ de Pololu_, y queda parado a la espera de que se pulse el botón incorporado en el chasis, para iniciar el combate. Una vez pulsado el botón **Erjuli** cuenta los 5 segundos de rigor que marcan las reglas. Una vez en marcha lee a través de los sensores en que situación está el contrincante, delante, a la derecha o a la izquierda. Lógicamente si no está en ninguna de esas posiciones es que estará detrás. **Erjuli** girará en la dirección en la que encuentre al contrincante y acelerará para embestirlo con sus 500gr de peso. Si en el movimiento detecta que pisa el borde de la pista, con los sensores delanteros QTR, retrocederá para salir de la zona  de peligro.
+El vehículo se enciende con el interruptor de la _shield_ de _Pololu_ y queda parado a la espera de que se pulse el botón incorporado en el chasis, para iniciar el combate. Una vez pulsado el botón **Erjuli** cuenta los 5 segundos de rigor que marcan las reglas. Una vez en marcha lee a través de los sensores en que situación está el contrincante, delante, a la derecha o a la izquierda. Lógicamente si no está en ninguna de esas posiciones es que estará detrás. **Erjuli** girará en la dirección en la que encuentre al contrincante y acelerará para embestirlo con sus 500gr de peso. Si en el movimiento detecta que pisa el borde de la pista, con los sensores delanteros QTR, retrocederá para salir de la zona  de peligro.
 
 
 ![Erjuli](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Erjuli%20final%201.jpg "Erjuli listo")
@@ -51,7 +51,7 @@ Para ocultar toda la electrónica y cableado, así como para darle una mayor rig
 
 ### Dohyo:
 
-El **_Dohyo_** es pista donde se desenvuelve el combate de minisumo. Es una circunferencia de 77cm de diámetro de color negro. El borde exterior del _Dohyo_ es una línea blanca de 2,5cm de ancho y que sirve para indicarles a los robóts los límites que no se deben traspasar.
+El **_Dohyo_** es la pista donde se desenvuelve el combate de minisumo. Es una circunferencia de 77cm de diámetro de color negro. El borde exterior del _Dohyo_ es una línea blanca de 2,5cm de ancho y que sirve para indicarles a los robóts los límites que no se deben traspasar.
 
 ![Foto Dohyo](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Dojo.png "Medidas Dohyo")
 
@@ -59,13 +59,13 @@ Durante cada combate cada robot intentará expulsar al otro del Dohyo, ganando e
 
 ### Condiciones iniciales:
 
-La competición se desenvuelve en hasta tres asaltos. En el primer asalto, los robóts estarán enfrentados sobre unas marcas equiespaciadas del centro del _Dohyo_. En el segundo asalto los contrincantes estarán en la misma posición de inicio pero de tal manera que el lado derecho de uno será paralelo al lado izquierdo del otro, mirando en direcciones opuestas. En el tercer asalto, si no quedó claro cual es el vencedor en los dos primeros asaltos, los robóts se pondrán de espaldas, mirando hacia el exterior del _Dohyo_.
+La competición se desenvuelve en hasta tres asaltos. En el primer asalto, los robots estarán enfrentados sobre unas marcas equiespaciadas del centro del _Dohyo_. En el segundo asalto los contrincantes estarán en la misma posición de inicio pero de tal manera que el lado derecho de uno será paralelo al lado izquierdo del otro, mirando en direcciones opuestas. En el tercer asalto, si no quedó claro cual es el vencedor en los dos primeros asaltos, los robots se pondrán de espaldas, mirando hacia el exterior del _Dohyo_.
 
 Cada asalto comienza cuando lo indica el árbitro, dejando un espacio temporal de 5 segundos antes de empezar a moverse.
 
 
 ### Detección del contrincante y estrategia:
-Erjuli, que torea por chicuelinas, localiza la posición del contrincante leyendo los sensores, de tal manera que si está en frente acelerá para embestirlo, mientras le pasa unos muletazos a la embestida del rival. En el caso de que detecte al contrincante por uno de los flancos, moverá la muleta hacie ese flanco y girará al mismo tiempo dando un gran pase al rival y embistiendo una vez que lo tiene de frente. En caso de detectar el borde retrocederá y girará para mantenerse en el Dohyo.
+Erjuli, que torea por chicuelinas, localiza la posición del contrincante leyendo los sensores, de tal manera que si está enfrente acelerá para embestirlo, mientras le pasa unos muletazos a la embestida del rival. En el caso de que detecte al contrincante por uno de los flancos, moverá la muleta hacie ese flanco y girará al mismo tiempo dando un gran pase al rival y embistiendo una vez que lo tiene de frente. En caso de detectar el borde retrocederá y girará para mantenerse en el Dohyo.
 
 En función del asalto, Erjuli empezará primero embistiendo de frente, para intentar obtener la mayor inercia posible en el choque inicial. En el segundo y tercer asalto, Erjuli girará para volver a embestir al contrincante una vez que lo encuentra de frente.
 
@@ -76,24 +76,24 @@ Erjuli utilizará su balda para levantar al otro contrincante y hacerle perder a
 
 El programa está realizado con el IDE Arduino, para su programación directa a través de cable USB. En la carpeta software se puede ver el programa comentado. El programa cuenta con una pestaña de "configuración.h", para ajustar los valores por defecto, que dependerán de los motores y sensores utilizados en cada caso, si son diferentes a los de esta construcción.
 
-Una vez encendido el robót configura los sensores, y dependiendo de las pulsaciones del botón de inicio sabrá en que estado estará, asalto primero, segundo o tercero. De esa manera puede empezar a moverse de diferente manera, es decir, en el primer asalto tendrá que avanzar para alcanzar la máxima velocidad lo antes posible para la colisión frontal con el adversario. Lógicamente ganará el que tenga mayor inercia (masa x velocidad) o el que consiga levantar al contrincante. Si lo levanta aumentará su peso y reducirá la adherencia del contrario.
+Una vez encendido el robot configura los sensores, y dependiendo de las pulsaciones del botón de inicio sabrá en que estado estará, asalto primero, segundo o tercero. De esa manera puede empezar a moverse de diferente manera, es decir, en el primer asalto tendrá que avanzar para alcanzar la máxima velocidad lo antes posible para la colisión frontal con el adversario. Lógicamente ganará el que tenga mayor inercia (masa x velocidad) o el que consiga levantar al contrincante. Si lo levanta aumentará su peso y reducirá la adherencia del contrario.
 
 La muleta del _Erjuli_ servirá para despistar al contrincante.
 
 ![Muleta Erjuli](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Muleta%20Erjuli.JPG "Diseño muleta Erjuli")
 
 ### Construcción:
-La construcción es sencilla, teniendo en cuenta el conexinado con la _shiel Zumo_ y las piezas impresas en 3D. En el programa está la relación de conexión de los pines, que se refleja en el siguiente esquema:
+La construcción es sencilla, teniendo en cuenta el conexinado con la _shield Zumo_ y las piezas impresas en 3D. En el programa está la relación de conexión de los pines, que se refleja en el siguiente esquema:
 
 ![Esquema conexión Erjuli](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/EsquemaConexion.JPG "Esquema conexionado Erjuli")
 
-Es necesario desconectar el _juper_ de medición de baterías de la _shield_, para utilizar el pin A1 para el _echo_ de uno de los sensores. Lo mismo con los puentes de **I2C** para gestión del giróscopo, acelerómetro y brújula, que dejan libres A4 y A5 para el mismo menester.
+Es necesario desconectar el _jumper_ de medición de baterías de la _shield_, para utilizar el pin A1 para el _echo_ de uno de los sensores. Lo mismo con los puentes de **I2C** para gestión del giróscopo, acelerómetro y brújula, que dejan libres A4 y A5 para el mismo menester.
 
 En la páctica compensa utilizar un protoboard tipo para instalar los sensores **HC-SR04** y el conector del microservo **SG90**, esto dará mayor fiabilidad a las conexiones y la fijación de los elementos físicos, que sufirán mucho en el combate
 
 ![Esquema Zumo Shield](https://github.com/NacioSystems/Tseo/blob/master/Imagenes/Esquema%20Zumo.JPG "Esquema de la Zumo Shield")
 
-La montera es opcional, se puede utilizar para el paseillo inicial, y dejarla fuera del _Dohyo_ durante el combate. Hay que tener en cuenta que la pérdia de una pieza de más de 5gr te puede dejar eliminado. Otra opción es pegar la montera a la cubierta de la carcasa con pegamento Imedio o similar, asegurando que no se perderán piezas durante la partida.
+La montera es opcional, se puede utilizar para el paseillo inicial, y dejarla fuera del _Dohyo_ durante el combate. Hay que tener en cuenta que la pérdida de una pieza de más de 5gr te puede dejar eliminado. Otra opción es pegar la montera a la cubierta de la carcasa con pegamento Imedio o similar, asegurando que no se perderán piezas durante la partida.
 
 ### Piezas impresas:
 
