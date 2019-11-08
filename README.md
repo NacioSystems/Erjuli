@@ -80,7 +80,13 @@ La muleta del _Erjuli_ servirá para despistar al contrincante.
 ![Muleta Erjuli](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Muleta%20Erjuli.JPG "Diseño muleta Erjuli")
 
 ### Construcción:
+La construcción es sencilla, teniendo en cuenta el conexinado con la _shiel Zumo_ y las piezas impresas en 3D. En el programa está la relación de conexión de los pines, que se refleja en el siguiente esquema:
 
+![Esquema conexión Erjuli](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/EsquemaConexion.JPG "Esquema conexionado Erjuli")
+
+En la páctica compensa utilizar un protoboard tipo para instalar los sensores **HC-SR04** y el conector del microservo **SG90**, esto dará mayor fiabilidad a las conexiones y la fijación de los elementos físicos, que sufirán mucho en el combate
+
+![Esquema Zumo Shield](https://github.com/NacioSystems/Tseo/blob/master/Imagenes/Esquema%20Zumo.JPG "Esquema de la Zumo Shield")
 
 ### Piezas impresas:
 
