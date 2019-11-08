@@ -14,7 +14,7 @@ Es la tercera versión de este robot, la primera participó en la Oshwdem 2016, 
 
 ### Introducción:
 
-El chasis del vehículo está construido sobre la plataforma **Pololu Zumo Arduino**, sobre el que se instalaron sensores de distancia a través de ultrasonidos HC-SR04, uno en la dirección frontal y otro a cada lado del bastidor. Se complementa con el sensor QTR frontal de Pololu Zumo, que tendrá la función de detectar la línea del borde de la pista, con el objeto de no salirse.
+El chasis del vehículo está construido sobre la plataforma **Pololu Zumo Arduino**, sobre el que se instalaron sensores de distancia a través de ultrasonidos **HC-SR04**, uno en la dirección frontal y otro a cada lado del bastidor. Se complementa con el sensor **QTR** frontal de Pololu Zumo, que tendrá la función de detectar la línea del borde de la pista, con el objeto de no salirse.
 
 El vehículo se enciende con el interruptor de la _shield_ de Pololu_, y queda parado a la espera de que se pulse el botón incorporado en el chasis, para iniciar el combate. Una vez pulsado el botón **Erjuli** cuenta los 5 segundos de rigor que marcan las reglas. Una vez en marcha lee a través de los sensores en que situación está el contrincante, delante, a la derecha o a la izquierda. Lógicamente si no está en ninguna de esas posiciones es que estará detrás. **Erjuli** girará en la dirección en la que encuentre al contrincante y acelerará para embestirlo con sus 500gr de peso. Si en el movimiento detecta que pisa el borde de la pista, con los sensores delanteros QTR, retrocederá para salir de la zona  de peligro.
 
