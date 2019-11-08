@@ -7,7 +7,7 @@ Fecha: 5/11/2019
 
 Este proyecto es robot de minisumo llamado **Erjuli**, pensado para las competiciones de un máximo de 500gr y dimensiones de 10x10cm2. Realizado por NacioSystems (O Milladoiro):
 
-Es la tercera versión de este robot, la primera participó en la Oshwdem 2016, tenía una caja de madera y una balda desplegable, En la segunda versión se cambió la caja por una impresa en 3D con PLA y se le añadió un micorservo en la parte trasera para activar un brazo que bajaba la muleta que intentaba torear a los otros robots competidores. En esta tercera versión se eliminó la balda desplegable, por otra fija de material flexible pensada para el mismo efecto y se retocó el software para adaptarlo a las tres fases de la competición
+Es la tercera versión de este robot, la primera participó en la Oshwdem 2016, tenía una caja de madera y una balda desplegable, En la segunda versión se cambió la caja de madera por una impresa en 3D con PLA y se le añadió un micorservo en la parte trasera, para activar un brazo que bajaba la muleta que intentaba torear a los otros robots competidores. En esta tercera versión se eliminó la balda desplegable, por otra fija de material flexible pensada para el mismo efecto y se retocó el software para adaptarlo a las tres fases de la competición
 
 
 - - -
@@ -55,6 +55,7 @@ El **_Dohyo_** es pista donde se desenvuelve el combate de minisumo. Es una circ
 
 ![Foto Dohyo](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/Dojo.png "Medidas Dohyo")
 
+Durante cada combate cada robot intentará expulsar al otro del Dohyo, ganando el que quede dentro o salga en último lugar.
 
 ### Condiciones iniciales:
 
@@ -67,6 +68,8 @@ Cada asalto comienza cuando lo indica el árbitro, dejando un espacio temporal d
 Erjuli, que torea por chicuelinas, localiza la posición del contrincante leyendo los sensores, de tal manera que si está en frente acelerá para embestirlo, mientras le pasa unos muletazos a la embestida del rival. En el caso de que detecte al contrincante por uno de los flancos, moverá la muleta hacie ese flanco y girará al mismo tiempo dando un gran pase al rival y embistiendo una vez que lo tiene de frente. En caso de detectar el borde retrocederá y girará para mantenerse en el Dohyo.
 
 En función del asalto, Erjuli empezará primero embistiendo de frente, para intentar obtener la mayor inercia posible en el choque inicial. En el segundo y tercer asalto, Erjuli girará para volver a embestir al contrincante una vez que lo encuentra de frente.
+
+Erjuli utilizará su balda para levantar al otro contrincante y hacerle perder adherencia, para tener una posición dominante con su peso aumentado por el peso del otro robot levantado.
 
 
 ### Programa:
@@ -83,6 +86,8 @@ La muleta del _Erjuli_ servirá para despistar al contrincante.
 La construcción es sencilla, teniendo en cuenta el conexinado con la _shiel Zumo_ y las piezas impresas en 3D. En el programa está la relación de conexión de los pines, que se refleja en el siguiente esquema:
 
 ![Esquema conexión Erjuli](https://github.com/NacioSystems/Erjuli/blob/master/Imagenes/EsquemaConexion.JPG "Esquema conexionado Erjuli")
+
+Es necesario desconectar el _juper_ de medición de baterías de la _shield_, para utilizar el pin A1 para el _echo_ de uno de los sensores. Lo mismo con los puentes de **I2C** para gestión del giróscopo, acelerómetro y brújula, que dejan libres A4 y A5 para el mismo menester.
 
 En la páctica compensa utilizar un protoboard tipo para instalar los sensores **HC-SR04** y el conector del microservo **SG90**, esto dará mayor fiabilidad a las conexiones y la fijación de los elementos físicos, que sufirán mucho en el combate
 
