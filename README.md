@@ -93,6 +93,8 @@ En la páctica compensa utilizar un protoboard tipo para instalar los sensores *
 
 ![Esquema Zumo Shield](https://github.com/NacioSystems/Tseo/blob/master/Imagenes/Esquema%20Zumo.JPG "Esquema de la Zumo Shield")
 
+La montera es opcional, se puede utilizar para el paseillo inicial, y dejarla fuera del _Dohyo_ durante el combate. Hay que tener en cuenta que la pérdia de una pieza de más de 5gr te puede dejar eliminado. Otra opcion es pegar la montera a la cubierta de la carcasa con pegamento Imedio o similar, asegurando que no se perderán piezas durante la partida.
+
 ### Piezas impresas:
 
 En la carpeta de piezas impresas están los modelos STL de la carcasa de _Erjuli_ donde se albergarán los senores **HC-SR04**, y el microservo. También están la montera, opcional, se puede llevar sólo para el paseíllo inicial, y el soporte que acopla el microservo al mástil de la muleta. 
