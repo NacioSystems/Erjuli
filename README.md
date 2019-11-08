@@ -93,7 +93,7 @@ En la páctica compensa utilizar un protoboard tipo para instalar los sensores *
 
 ![Esquema Zumo Shield](https://github.com/NacioSystems/Tseo/blob/master/Imagenes/Esquema%20Zumo.JPG "Esquema de la Zumo Shield")
 
-La montera es opcional, se puede utilizar para el paseillo inicial, y dejarla fuera del _Dohyo_ durante el combate. Hay que tener en cuenta que la pérdia de una pieza de más de 5gr te puede dejar eliminado. Otra opcion es pegar la montera a la cubierta de la carcasa con pegamento Imedio o similar, asegurando que no se perderán piezas durante la partida.
+La montera es opcional, se puede utilizar para el paseillo inicial, y dejarla fuera del _Dohyo_ durante el combate. Hay que tener en cuenta que la pérdia de una pieza de más de 5gr te puede dejar eliminado. Otra opción es pegar la montera a la cubierta de la carcasa con pegamento Imedio o similar, asegurando que no se perderán piezas durante la partida.
 
 ### Piezas impresas:
 
