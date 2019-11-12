@@ -121,6 +121,9 @@ También se incluyen los ficheros FreeCad donde está el diseño de estas piezas
 
 **Ignacio Otero**
 
+### Agradecimientos:
+
+Muchas gracias **Bea** por tu colaboración en la revisión y corrección de esta página.
 
 
 ### Licencia:
